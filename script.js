@@ -15,7 +15,7 @@ function toggleButton() {
 // passing joke to voicerss api
 function talkToMe(joke) {
     VoiceRSS.speech({
-        key: myModule.goodReadsKey,
+        key: '2620aabffbc74921b51fbabf0559ffa4',
         src: joke,
         hl: 'en-us',
         r: 0,
@@ -28,7 +28,7 @@ function talkToMe(joke) {
 // Get jokes from joke api
 async function getJokes() {
     let joke = '';
-    const apiUrl = myModule.goodReadsUrl;
+    const apiUrl = "https://sv443.net/jokeapi/v2/joke/Programming,Miscellaneous,Dark,Pun?blacklistFlags=nsfw,religious,political,racist,sexist";
     try {
         const response = await fetch(apiUrl);
         // converts response into json format
